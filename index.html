@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiteGames - Sua Plataforma de Jogos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">JR.Games</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Jogos</a></li>
+                <li><a href="#tournaments">Torneios</a></li>
+                <li><a href="#community">Comunidade</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Bem-vindo ao Arena Gamer</h1>
+            <p class="hero-subtitle">O seu destino final para a melhor experiência de jogos</p>
+            <button class="btn btn-primary">Começar Agora</button>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- Featured Games Section -->
+    <section id="games" class="featured-games">
+        <div class="container">
+            <h2 class="section-title">Jogos em Destaque</h2>
+            <div class="games-grid">
+                <!-- Game Card 1 -->
+                <div class="game-card">
+                    <div class="game-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <span class="game-badge">Popular</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>Cyber Warrior</h3>
+                        <p>Ação | Multiplayer</p>
+                        <div class="game-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="score">9.8</span>
+                        </div>
+                        <button class="btn btn-secondary">Jogar Agora</button>
+                    </div>
+                </div>
+
+                <!-- Game Card 2 -->
+                <div class="game-card">
+                    <div class="game-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <span class="game-badge">Novo</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>Neon Rush</h3>
+                        <p>Racing | Arcade</p>
+                        <div class="game-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="score">9.2</span>
+                        </div>
+                        <button class="btn btn-secondary">Jogar Agora</button>
+                    </div>
+                </div>
+
+                <!-- Game Card 3 -->
+                <div class="game-card">
+                    <div class="game-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <span class="game-badge">Top</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>Dark Legends</h3>
+                        <p>RPG | Estratégia</p>
+                        <div class="game-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="score">9.7</span>
+                        </div>
+                        <button class="btn btn-secondary">Jogar Agora</button>
+                    </div>
+                </div>
+
+                <!-- Game Card 4 -->
+                <div class="game-card">
+                    <div class="game-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <span class="game-badge">Clássico</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>Pixel Master</h3>
+                        <p>Puzzle | Casual</p>
+                        <div class="game-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="score">8.9</span>
+                        </div>
+                        <button class="btn btn-secondary">Jogar Agora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournaments Section -->
+    <section id="tournaments" class="tournaments">
+        <div class="container">
+            <h2 class="section-title">Torneios Ativos</h2>
+            <div class="tournaments-grid">
+                <div class="tournament-card">
+                    <div class="tournament-header">
+                        <h3>Champion League</h3>
+                        <span class="prize">R$ 50.000</span>
+                    </div>
+                    <p class="tournament-desc">Competição de Cyber Warrior com os melhores jogadores</p>
+                    <div class="participants">
+                        <small>128 Participantes</small>
+                    </div>
+                    <button class="btn btn-secondary">Inscrever-se</button>
+                </div>
+
+                <div class="tournament-card">
+                    <div class="tournament-header">
+                        <h3>Speed Race Cup</h3>
+                        <span class="prize">R$ 35.000</span>
+                    </div>
+                    <p class="tournament-desc">Corridas de Neon Rush - Prove sua velocidade!</p>
+                    <div class="participants">
+                        <small>256 Participantes</small>
+                    </div>
+                    <button class="btn btn-secondary">Inscrever-se</button>
+                </div>
+
+                <div class="tournament-card">
+                    <div class="tournament-header">
+                        <h3>Master Strategy</h3>
+                        <span class="prize">R$ 75.000</span>
+                    </div>
+                    <p class="tournament-desc">RPG Dark Legends - Competição estratégica</p>
+                    <div class="participants">
+                        <small>64 Participantes</small>
+                    </div>
+                    <button class="btn btn-secondary">Inscrever-se</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <h3 class="stat-number">500K+</h3>
+                <p class="stat-label">Jogadores Ativos</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number">50+</h3>
+                <p class="stat-label">Jogos Disponíveis</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number">R$ 1M+</h3>
+                <p class="stat-label">Prêmios Totais</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number">24/7</h3>
+                <p class="stat-label">Suporte Online</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="community">
+        <div class="container">
+            <h2 class="section-title">Comunidade Gamer</h2>
+            <p class="section-subtitle">Conecte-se com jogadores do mundo inteiro</p>
+            <div class="community-grid">
+                <div class="community-item">
+                    <div class="community-icon">💬</div>
+                    <h3>Chat em Tempo Real</h3>
+                    <p>Converse com amigos enquanto joga</p>
+                </div>
+                <div class="community-item">
+                    <div class="community-icon">🎮</div>
+                    <h3>Clãs e Equipes</h3>
+                    <p>Forme equipes e compita juntos</p>
+                </div>
+                <div class="community-item">
+                    <div class="community-icon">🏆</div>
+                    <h3>Ranking Global</h3>
+                    <p>Suba no ranking e ganhe recompensas</p>
+                </div>
+                <div class="community-item">
+                    <div class="community-icon">📺</div>
+                    <h3>Transmissão ao Vivo</h3>
+                    <p>Assista e transmita suas jogadas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Fale Conosco</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Seu Nome" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Seu Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SiteGames</h4>
+                    <p>A melhor plataforma de jogos online do Brasil</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#games">Jogos</a></li>
+                        <li><a href="#tournaments">Torneios</a></li>
+                        <li><a href="#community">Comunidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">F</a>
+                        <a href="#" class="social-icon">T</a>
+                        <a href="#" class="social-icon">D</a>
+                        <a href="#" class="social-icon">Y</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SiteGames. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
