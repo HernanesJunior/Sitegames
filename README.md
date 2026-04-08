@@ -1,247 +1,185 @@
-# 🎮 SiteGames - Plataforma Gamer
+# 🗣️ VoiceHub - Comunicador Acessível
 
-Um site moderno e responsivo com design gamer, tema escuro com verde neon, perfeito para uma plataforma de jogos online.
+Um aplicativo web moderno e acessível para facilitar a comunicação de pessoas mudas, utilizando síntese de voz (Text-to-Speech) com tecnologia Web Speech API.
 
-## 🎨 Características Principais
+## 🌟 Características Principais
 
-### Design & UX
-- ✨ **Tema Escuro Pro**: Preto puro com verde neon brilhante
-- 🎯 **Layout Responsivo**: Funciona perfeitamente em mobile, tablet e desktop
-- ⚡ **Animações Suaves**: Efeitos de transição elegantes em toda a página
-- 🌊 **Parallax Effect**: Fundo animado na seção hero
-- 💫 **Gradientes Sofisticados**: Combinações de cores atrativas
+### 1. **Síntese de Voz em Português**
+- Converte texto digitado em áudio usando Web Speech API
+- Suporte completo a português brasileiro
+- Controle de velocidade de fala (0.5x a 2x)
+- Ajuste de tom da voz (0.5 a 2)
+- Seleção de diferentes vozes do sistema
 
-### Funcionalidades
-- 📱 **Menu Mobile**: Navegação adaptativa para dispositivos pequenos
-- 🎮 **Grid de Jogos**: Exibição elegante de 4 jogos em destaque
-- 🏆 **Seção de Torneios**: Competições com prêmios totais
-- 📊 **Estatísticas**: Números animados ao rolar a página
-- 👥 **Comunidade**: Cards com recursos sociais
-- 💬 **Formulário de Contato**: Com validação de campos
-- 🔗 **Smooth Scroll**: Navegação suave entre seções
+### 2. **Frases Pré-definidas**
+- 12 frases comuns pré-configuradas
+- Adicione suas próprias frases rapidamente
+- Remova frases personalizadas com um clique
+- Seleção rápida para agilizar a comunicação
+
+### 3. **Sugestões Inteligentes**
+- Sugestões em tempo real enquanto digita
+- Baseadas em padrões de palavras-chave
+- Integração com frases salvas
+- Até 5 sugestões por vez
+
+### 4. **Histórico de Comunicação**
+- Armazena todas as mensagens faladas (até 50)
+- Data e hora de cada mensagem
+- Opções para repetir, copiar ou deletar mensagens
+- Função para limpar todo o histórico
+
+### 5. **Compartilhamento**
+- Gerar código QR para compartilhar o aplicativo
+- Copiar link do aplicativo
+- Facilita acesso para outras pessoas
+
+### 6. **Configurações Personalizáveis**
+- Salva automaticamente suas preferências
+- Ajustes de velocidade e tom persistem
+- Armazenamento local (LocalStorage)
 
 ## 🚀 Como Usar
 
-### Instalação
-1. Clone o repositório:
-```bash
-git clone <seu-repositório>
-cd Sitegames
-```
+### Comunicação Básica
+1. Digite sua mensagem no campo de texto
+2. Clique no botão "🔊 Falar" ou pressione `Ctrl + Enter`
+3. O aplicativo lerá a mensagem em voz alta
 
-2. Abra o arquivo `index.html` em seu navegador:
-```bash
-start index.html
-```
+### Usar Frases Rápidas
+1. Clique em qualquer frase pré-definida
+2. A frase será inserida, lida em voz alta e adicionada ao histórico
+3. Use as sugestões que aparecem enquanto digita
 
-Ou use um servidor local (recomendado):
-```bash
-# Com Python 3
-python -m http.server 8000
+### Adicionar Frases Personalizadas
+1. Clique em "+ Adicionar Frase"
+2. Digite sua frase (máximo 80 caracteres)
+3. Clique em "Salvar"
+4. A nova frase aparecerá na grade de frases
 
-# Com Node.js (http-server)
-npx http-server
-```
+### Gerenciar Histórico
+1. Clique em "▼ Ver Histórico" para expandir
+2. Visualize todas as mensagens anteriores
+3. Use os botões para:
+   - 🔊 Repetir a mensagem
+   - 📋 Copiar para área de transferência
+   - 🗑️ Deletar a mensagem
 
-Acesse `http://localhost:8000` no navegador.
+### Configurar Voz
+1. Acesse a seção "⚙️ Configurações"
+2. Altere a voz, velocidade e tom
+3. As configurações são salvas automaticamente
 
-## 📁 Estrutura do Projeto
+### Compartilhar
+1. Clique em "📤 Gerar QR Code" para criar um código QR
+2. Escaneie para acessar de outro dispositivo
+3. Ou clique em "🔗 Copiar Link" para compartilhar por mensagem/email
+
+## 💾 Armazenamento Local
+
+Todas as suas dados são armazenados **apenas no seu dispositivo**:
+- Frases personalizadas
+- Histórico de comunicação
+- Configurações (velocidade, tom, voz)
+
+Os dados são salvos automaticamente e persistem entre sessões.
+
+## 🌐 Compatibilidade
+
+### Navegadores Suportados
+- ✅ Chrome/Chromium (90+)
+- ✅ Firefox (88+)
+- ✅ Safari (14+)
+- ✅ Edge (90+)
+
+### Requisitos
+- JavaScript habilitado
+- Conexão com internet (para CDN do QRCode)
+- Suporte a Web Speech API
+
+## 🎯 Funcionalidades Técnicas
+
+### Desktop
+- Layout otimizado com grade responsiva
+- Múltiplos botões de ação
+- Interface completa visível
+
+### Mobile
+- Design adaptativo
+- Toque otimizado
+- Interface simplificada automaticamente
+- Máximo de 2 colunas em frases
+
+## 🔒 Privacidade
+
+- ✅ Sem envio de dados para servidores
+- ✅ Processamento 100% local
+- ✅ Sem rastreamento
+- ✅ Web Speech API usa serviços do dispositivo/navegador
+- ⚠️ Nota: A síntese de voz pode usar serviços da nuvem dependendo do navegador
+
+## 🎨 Design
+
+- Interface moderna com gradientes
+- Cores acessíveis e de alto contraste
+- Ícones emojis intuitivos
+- Animações suaves e responsivas
+- Dark mode pronto para implementação futura
+
+## ⌨️ Atalhos de Teclado
+
+| Atalho | Ação |
+|--------|------|
+| `Ctrl + Enter` | Falar mensagem |
+| `Escape` | Fechar modal |
+| `Enter` (em modal) | Salvar frase |
+
+## 🔧 Estrutura de Arquivos
 
 ```
 Sitegames/
-├── index.html       # Estrutura HTML principal
-├── style.css        # Estilos e tema
-├── script.js        # Interatividade e animações
+├── index.html       # Estrutura HTML
+├── style.css        # Estilos CSS
+├── script.js        # Lógica JavaScript
 └── README.md        # Este arquivo
 ```
 
-## 🎨 Paleta de Cores
+## 📝 Notas Importantes
 
-| Cor | Valor | Uso |
-|-----|-------|-----|
-| Verde Neon | `#00ff40` | Cor primária, destaques |
-| Verde Médio | `#00aa00` | Secundária, gradientes |
-| Verde Escuro | `#001a00` | Backgrounds, bordas |
-| Preto Puro | `#000000` | Fundo principal |
-| Cinza | `#b0b0b0` | Texto secundário |
-| Branco | `#ffffff` | Texto principal |
+1. **Primeira Vez?** Recarregue a página para a Web Speech API carregar corretamente
+2. **Vozes** A disponibilidade de vozes varia por sistema operacional
+3. **Histórico** Limitado a 50 mensagens (as mais antigas são removidas)
+4. **Privacidade** Seus dados nunca saem do seu navegador
 
-## 📑 Seções do Site
+## 🚀 Roadmap Futuro
 
-### 1. **Navbar (Barra de Navegação)**
-- Logo com ícone pulsante
-- Links para todas as seções
-- Menu responsivo para mobile
-- Barra fixa no topo (sticky)
+- [ ] Suporte a múltiplos idiomas
+- [ ] Histórico de antes/depois sincronizado
+- [ ] Export de histórico em PDF
+- [ ] Integração com reconhecimento de voz
+- [ ] Modo escuro
+- [ ] Sincronização entre dispositivos
+- [ ] Biblioteca de emojis para expressões
 
-### 2. **Hero Section**
-- Título principal em gradiente
-- Subtítulo chamativo
-- Botão CTA "Começar Agora"
-- Background com animação parallax
+## 💡 Dicas de Uso
 
-### 3. **Jogos em Destaque**
-- 4 cards de jogos
-- Badges (Popular, Novo, Top, Clássico)
-- Rating com estrelas
-- Hover effects elegantes
+1. **Para melhor experiência:** Use frases curtas e claras
+2. **Customize suas frases:** Adicione frases que usa com frequência
+3. **Gestos rápidos:** Clique nos botões de frase rapidamente para comunicação ágil
+4. **Histórico:** Consulte o histórico se esqueceu o que falou
+5. **Configurações:** Experimente velocidades diferentes
 
-### 4. **Torneios Ativos**
-- 3 torneios em destaque
-- Prêmios totais destacados
-- Número de participantes
-- Botão de inscrição
+## 📧 Suporte
 
-### 5. **Estatísticas**
-- 4 números principais animados
-- Cards com efeitos hover
-- Atualização ao scroll
-
-### 6. **Comunidade Gamer**
-- 4 recursos principais
-- Ícones flutuantes animados
-- Cards interativos
-
-### 7. **Formulário de Contato**
-- Campos de nome, email e mensagem
-- Validação em tempo real
-- Feedback visual de sucesso
-
-### 8. **Footer**
-- Links rápidos
-- Redes sociais
-- Informações da empresa
-
-## ⚙️ Personalização
-
-### Mudar Cores
-Edite as variáveis em `style.css`:
-```css
-:root {
-    --primary-color: #00ff40;      /* Verde neon */
-    --secondary-color: #00aa00;    /* Verde médio */
-    --tertiary-color: #001a00;     /* Verde escuro */
-    --bg-dark: #0a0f0a;
-    --bg-darker: #000000;
-}
-```
-
-### Adicionar Novos Jogos
-No `index.html`, copie um `.game-card` e modifique:
-```html
-<div class="game-card">
-    <div class="game-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-        <span class="game-badge">Novo Badge</span>
-    </div>
-    <div class="game-info">
-        <h3>Seu Jogo</h3>
-        <p>Categoria | Tipo</p>
-        <div class="game-rating">
-            <span class="stars">★★★★★</span>
-            <span class="score">9.9</span>
-        </div>
-        <button class="btn btn-secondary">Jogar Agora</button>
-    </div>
-</div>
-```
-
-### Modificar Conteúdo
-Todos os textos podem ser editados diretamente no `index.html`.
-
-## 🎬 Efeitos e Animações
-
-- **Pulse**: Logo pulsante na navbar
-- **Slide Up**: Entrada suave do conteúdo
-- **Move Gradient**: Fundo animado do hero
-- **Float**: Ícones flutuantes na comunidade
-- **Ripple**: Efeito ao clicar botões
-- **Glow**: Brilho nos títulos ao scroll
-
-## 📱 Responsividade
-
-O site é totalmente responsivo com breakpoints em:
-- **Desktop**: 1200px+
-- **Tablet**: 768px - 1199px
-- **Mobile**: < 767px
-
-## 🔍 SEO & Performance
-
-- Meta tags incluídas
-- Estrutura semântica HTML5
-- CSS otimizado
-- JavaScript sem dependências externas
-- Lighthouse friendly
-
-## 🐛 Troubleshooting
-
-### Animações não funcionando
-- Verifique se o JavaScript está habilitado
-- Limpe o cache do navegador (Ctrl+Shift+Delete)
-
-### Cores diferentes
-- Verifique a paleta de cores em `:root` no CSS
-- Certifique-se de que o arquivo está salvo
-
-### Menu mobile não aparece
-- Verifique o `display` do `.menu-toggle` em mobile
-- Teste em modo responsivo do navegador (F12)
-
-## 🚀 Deploy
-
-### GitHub Pages
-1. Faça push do repositório para GitHub
-2. Vá para Settings > Pages
-3. Selecione `main` branch
-4. Seu site estará em: `https://seu-usuario.github.io/Sitegames`
-
-### Netlify
-1. Conecte seu repositório GitHub no Netlify
-2. Defina como pasta de publicação: `/`
-3. Deploy automático realizado!
-
-### Vercel
-1. Importe seu repositório
-2. Clique em Deploy
-3. URL gerada automaticamente
-
-## 👨‍💻 Tecnologias Usadas
-
-- **HTML5**: Estrutura semântica
-- **CSS3**: Estilos avançados com gradientes e animações
-- **JavaScript Vanilla**: Interatividade sem dependências
-- **CSS Grid & Flexbox**: Layout responsivo
-
-## 📝 Melhorias Futuras
-
-- [ ] Integração com backend para gerenciar jogos
-- [ ] Sistema de login/registro
-- [ ] Painel de administrador
-- [ ] Integração com APIs de jogos
-- [ ] Sistema de chat em tempo real
-- [ ] Suporte para dark/light mode toggle
-- [ ] Internacionalização (i18n)
-- [ ] PWA (Progressive Web App)
-
-## 🤝 Contribuições
-
-Contribuições são bem-vindas! Sinta-se livre para:
-- Reportar bugs
-- Sugerir melhorias
-- Enviar pull requests
+Para relatar problemas ou sugerir melhorias, entre em contato.
 
 ## 📄 Licença
 
-Este projeto é de código aberto e está disponível sob a licença MIT.
-
-## 📞 Contato
-
-- 📧 Email: seus-dados@email.com
-- 🐙 GitHub: [seu-usuario]
-- 🐦 Twitter: [@seu-twitter]
-- 💼 LinkedIn: [seu-linkedin]
+Este projeto é de código aberto para fins de acessibilidade.
 
 ---
 
-**Desenvolvido com ❤️ para gamers** 🎮
+**Desenvolvido com ❤️ para facilitar a comunicação de todos.**
 
-Última atualização: 22 de fevereiro de 2026
+Versão: 1.0.0
+Última atualização: 8 de abril de 2026
